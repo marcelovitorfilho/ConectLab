@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectLab - Diagnósticos Online</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>ConectLab</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#agendamento">Agendamento</a>
+            <a href="#diagnosticos">Diagnósticos</a>
+            <a href="#contato">Contato</a>
+            <a href="paciente.html">Área do paciente</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="sobre">
+        <h1>Bem-vindo ao ConectLab</h1>
+
+        <p>Seu laboratório de saúde digital com atendimentos e diagnósticos online seguros e rápidos.</p>
+        <p>No ConectLab, você é atendido por uma equipe formada por médicos renomados, com ampla experiência em suas
+            respectivas áreas de atuação. Todos os profissionais passam por criteriosos processos de seleção,
+            assegurando
+            que cada consulta online mantenha os mais altos padrões de qualidade, ética e precisão diagnóstica.
+            <br> <br>
+            Utilizamos tecnologia de ponta para auxiliar na coleta de dados e na emissão de diagnósticos, permitindo que
+            nossos especialistas ofereçam pareceres técnicos assertivos, com base nas melhores práticas clínicas e
+            evidências científicas atualizadas.
+
+            ConectLab é sinônimo de confiança, segurança e excelência em atendimentos de saúde digital.
+        </p>
+    </section>
+    <section class="section" id="diagnosticos">
+        <h2>Diagnósticos Online</h2>
+        <p>Após sua consulta, você poderá acessar seus laudos, prescrições e relatórios diretamente por nossa
+            plataforma.</p>
+        <ul>
+            <li>✔️ Laudos disponíveis em PDF</li>
+            <li>✔️ Prescrição digital com QR Code</li>
+            <li>✔️ Acesso por login seguro</li>
+        </ul>
+
+
+        <section class="section" id="agendamento">
+            <h2>Importante para uso correto do site</h2>
+            <p>Embora ofereçamos um serviço completo de consultas e diagnósticos online, reforçamos que algumas
+                condições
+                clínicas exigem atendimento presencial complementar, a critério do profissional de saúde responsável.
+
+                Quando houver essa indicação formal, o paciente deverá comparecer obrigatoriamente à unidade física
+                recomendada. O não comparecimento injustificado, após o agendamento confirmado, estará sujeito à
+                aplicação
+                de multa administrativa, conforme os termos de uso da plataforma.
+
+                Esta medida visa garantir o bom uso dos recursos médicos, evitar o desuso da rede presencial e,
+                principalmente, zelar pela segurança e integridade do atendimento ao paciente.
+
+            </p>
+            <section class="section" id="envio-exames">
+                <h2>Envio de Exames para Análise</h2>
+                <p>
+                    Envie seus exames diretamente pela plataforma para análise especializada, de forma segura e prática.
+                    Não é necessário retorno presencial, a menos que seja expressamente solicitado pelo profissional
+                    responsável.
+                </p>
+
+                <div class="formulario">
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <label for="nomePaciente">Nome do Paciente:</label>
+                        <input type="text" id="nomePaciente" name="nomePaciente" required>
+
+                        <label for="emailPaciente">E-mail:</label>
+                        <input type="email" id="emailPaciente" name="emailPaciente" required>
+
+                        <label for="tipoExame">Tipo de Exame:</label>
+                        <input type="text" id="tipoExame" name="tipoExame"
+                            placeholder="Ex: Hemograma, Raio-X, Ressonância" required>
+
+                        <label for="arquivoExame">Anexar Arquivo do Exame:</label>
+                        <input type="file" id="arquivoExame" name="arquivoExame" accept=".pdf, .jpg, .jpeg, .png"
+                            required>
+
+                        <label for="mensagemExame">Observações (opcional):</label>
+                        <textarea id="mensagemExame" name="mensagemExame" rows="4"
+                            placeholder="Inclua informações relevantes, sintomas ou pedidos médicos, se houver."></textarea>
+
+                        <p style="font-size: 0.9em; color: #555;">
+                            🔒 Todos os arquivos enviados são tratados com confidencialidade e armazenados de forma
+                            segura
+                            conforme a LGPD.
+                        </p>
+
+                        <p style="font-size: 0.95em; color: #0077cc;">
+                            ⚠️ O retorno presencial não é obrigatório, exceto em casos específicos indicados por nosso
+                            corpo clínico.
+                        </p>
+
+                        <button type="submit">Enviar Exame para Análise</button>
+                    </form>
+                </div>
+            </section>
+
+            <h2>Agende sua Consulta</h2>
+            <div class="formulario">
+                <form>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="data">Data da Consulta:</label>
+                    <input type="date" id="data" name="data" required>
+
+                    <label for="especialidade">Especialidade:</label>
+                    <select id="especialidade" name="especialidade" required>
+                        <option value="">Selecione</option>
+                        <option value="clinico">Clínico Geral</option>
+                        <option value="nutricionista">Nutricionista</option>
+                        <option value="pediatra">Pediatra</option>
+
+                    </select>
+
+                    <label for="mensagem">Mensagem ou Sintomas:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                    <button type="submit">Agendar Consulta</button>
+                    <button type="submit">Fazer consulta agora</button>
+                </form>
+            </div>
+        </section>
+
+
+        <footer id="contato">
+            <p>&copy; 2025 ConectLab - Todos os direitos reservados</p>
+            <p>Email: contato@conectlab.com.br | Telefone: (61) 99999-0000</p>
+        </footer>
+
+</body>
+
+</html>

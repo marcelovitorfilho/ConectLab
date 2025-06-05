@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard do Paciente - ConectLab</title>
+    <link rel="stylesheet" href="resultados.css">
+
+</head>
+
+<body>
+
+    <header>
+        Área do Paciente - ConectLab
+    </header>
+
+    <div class="container">
+        <div class="bem-vindo">
+            👋 Olá, Garcia Junior. Abaixo estão seus exames e diagnósticos recentes.
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Tipo de Exame</th>
+                    <th>Status</th>
+                    <th>Laudo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Data">10/05/2025</td>
+                    <td data-label="Exame">Raio-X Torácico</td>
+                    <td data-label="Status"><span class="status em-analise">Em análise</span></td>
+                    <td data-label="Laudo">—</td>
+                    <td class="acoes" data-label="Ações"><a href="#">Detalhes</a></td>
+                </tr>
+                <tr>
+                    <td data-label="Data">03/05/2025</td>
+                    <td data-label="Exame">Hemograma Completo</td>
+                    <td data-label="Status"><span class="status concluido">Analisado</span></td>
+                    <td data-label="Laudo"><a href="#">Baixar PDF</a></td>
+                    <td class="acoes" data-label="Ações"><a href="#">Ver Laudo e ir para consulta médica</a></td>
+                </tr>
+                <tr>
+                    <td data-label="Data">02/05/2025</td>
+                    <td data-label="Exame">Exame Neurologico</td>
+                    <td data-label="Status"><span class="status concluido">Analisado</span></td>
+                    <td data-label="Laudo"><a href="#">Baixar PDF</a></td>
+                    <td class="acoes" data-label="Ações"><a href="#">Ver Laudo e ir para consulta médica</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <center> <a href="index.html" target="_blank">Voltar ao Menu Principal</a></center>
+
+</body>
+
+</html>
